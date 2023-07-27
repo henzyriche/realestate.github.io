@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"       content="Salam">
+    <meta name="keywords"           content="estate + developer + website">
+    <meta name="description"        content="Real estate website">
+    <title>tbhomes</title>
+    <link href="./images/TBHomes logo-fotor-bg-remover-20230726181219.png" rel="icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../fonts/css/all.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap"
+     rel="stylesheet">
+</head>
+<body>
+    <div class="homepage1">
+        <video autoplay muted loop>
+        <source src="./videos/house tour.mp4">
+          </video>
+    <nav>
+        <a href="index.html"><img src="./images/green logo-fotor-bg-remover-20230714113054.png" alt="" /></a>
+        <h1 style="color: #fff">TB<span style="color: rgb(249, 82, 21);">HOMES</span></h1>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li class="after"><a href="index.html">HOME</a></li>
+            <li class="after"><a href="services.html">SERVICE</a></li>
+            <li class="after"><a href="about.html">ABOUT</a></li>
+            <li class="after"><a href="contact.html">CONTACT</a></li>
+            <li><a href="signup.html"><button class="signup">SIGN UP</button></a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="search-section">
+        <!-- Search input with placeholder -->
+        <input type="text" class="search-input" placeholder="Address, City or Region...">
+      </div>
+      <div class="content">
+        <h1>FIND YOUR DREAM HOME</h1>
+        <p>We Offer the Best Real Estate Deals.</p>
+      </div>
+      <div class="contact-button">
+       <a href="#"><button class="service-btn">OUR SERVICE</button></a>
+       <a href="#"><button class="contact-btn" >CALL US TODAY</button></a>
+      </div>
+    </div>
+
+    <div class="filter-section">
+        <div class="filter-container">
+          <div class="card-container">
+            <div class="card"><p><input type="text" placeholder="Location" class="input-text"></p></div>
+            <div class="card"><p>-- Property Type --</p></div>
+            <div class="card"><p>-- Purpose --</p></div>
+            <div class="card"><p><input type="text" placeholder="City" class="input-text"></p></div>
+          </div>
+          <button class="more-btn">MORE FILTERS</button>
+          <button class="property-btn">PROPERTY SEARCH</button>
+        </div>
+    </div>
+
+   
+    
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+  
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
+    
+</body>
+</html>
