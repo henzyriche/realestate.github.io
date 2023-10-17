@@ -2,374 +2,404 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author"       content="Salam">
-    <meta name="keywords"           content="estate + developer + website">
-    <meta name="description"        content="Real estate website">
-    <title>tbhomes</title>
-    <link href="./images/TB-Homes-fotor-bg-remover-20230727144256.png" rel="icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../fonts/css/all.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <meta name="author"            content="Henry">
+    <meta name="description"       content="travel and tour website">
+    <meta name="keywords"          content="website + travel + tour + destination">
+    <title>pathfinder travel and tour</title>
+
+    <!----creating icon----->
+    <link href="./images/pathfinder-fotor-bg-remover-20230523214440.png" rel="icon">
+    
+    <!-----Linking font awesome------>
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap"
      rel="stylesheet">
-</head>
-<body>
-    <div class="homepage1">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+  
+    <!-------Linking external css------->
+    <link rel="stylesheet" href="./css/style.css">
+
+      <div class="navbar" id="myNavbar">
+        <div class="logo">
+          <img src="./images/pathfinder-fotor-bg-remover-20230523214440.png" class="logo-img">
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a class="icon" href="javascript:void(0);" onclick="toggleNavbar()">&#9776;</a>
+      </div>
+
+      <section class="video-section">
         <video autoplay muted loop>
-        <source src="./videos/house tour.mp4">
-          </video>
-    <nav>
-        <a href="index.html"><img src="./images/green logo-fotor-bg-remover-20230714113054.png" alt="" /></a>
-        <h1><img src="./images/TB-Homes-fotor-bg-remover-20230727144256.png"></h1>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li class="after"><a href="index.html">HOME</a></li>
-            <li class="after"><a href="services.html">SERVICE</a></li>
-            <li class="after"><a href="about.html">ABOUT</a></li>
-            <li class="after"><a href="contact.html">CONTACT</a></li>
-            <li><a href="signup.html"><button class="signup">SIGN UP</button></a></li>
-          </ul>
+          <source src="./videos/slideshow.mp4">
+        </video>
+        <div class="video-content">
+          <h1>Welcome to The Pathfinder</h1>
+          <p>Explore, Discover and Create Unforgettable Memories.</p>
+          <a href="#" class="book-button">Book Now</a>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
+      </section>
 
-      <div class="search-section">
-        <input type="text" class="search-input" placeholder="Address, City or Neighbourhood...">
-        <i class="fas fa-search search-icon"></i> 
-      </div>
-
-      <div class="content">
-        <h1>FIND YOUR DREAM HOME</h1>
-        <p>We Offer the Best Real Estate Deals.</p>
-      </div>
-      <div class="contact-button">
-       <a href="#"><button class="service-btn">OUR SERVICE</button></a>
-       <a href="#"><button class="contact-btn" >CALL US TODAY</button></a>
-      </div>
-    </div>
-
-    <section class="filter-section">
-        <div class="filter-container">
-          <div class="card-container">
-            <div class="card"><p><input type="text" placeholder="Location" class="input-text"></p></div>
-            <div class="card"><p>-- Property Type --</p></div>
-            <div class="card"><p>-- Purpose --</p></div>
-            <div class="card"><p><input type="text" placeholder="City" class="input-text"></p></div>
-          </div>
-          <button class="more-btn">MORE FILTERS</button>
-          <button class="property-btn">PROPERTY SEARCH</button>
+      <section class="booking-container">
+        <div class="card">
+          <div class="icon"><i class="fa-sharp fa-solid fa-ticket"  id="ticket"></i></div>
+          <h2>Flight Bookings</h2>
+          <p>Get the best of flight bookings at Pathfinders Travel
+            and Tours and explore the World with Ease!.</p>
         </div>
-    </section>
+    
+        <div class="card">
+          <div class="icon"><i class="fa-brands fa-cc-visa"   id="visa"></i></div>
+          <h2>Visa Assistance</h2>
+          <p>  We are ready to assist you with all your Visa needs.</p>
+        </div>
+      </section>
 
-    <div class="homepage-about">
-        <div class="topic">
-         <p><strong>WHO WE ARE</strong></p>
-        <hr class="hr"> 
-    </div>
-        <div class="homepageabout-content">
-        <div class="content">
-            <div class="image">
-                <img src="./images/labourer 1.jpeg" class="labourer">
+      <section class="hotel-container">
+        <div class="card">
+          <div class="icon"> <i class="fa-solid fa-hotel"   id="hotel"></i></i></div>
+          <h2>Hotel Reservations</h2>
+          <p> With us you are guaranteed of the very best of Hotel Services.</p>
+        </div>
+    
+        <div class="card">
+          <div class="icon"> <i class="fa-sharp fa-solid fa-people-group"    id="group"></i></div>
+          <h2>Group Travels & Tours</h2>
+          <p> We have you the best packages when it comes to group travels or tours with us.</p>
+        </div>
+      </section>
+
+      <section class="travel-section">
+        <div class="text-content">
+          <h2>PathFinder Travel and Tours</h2>
+          <p>Pathfinder Travel and Tours
+            your one-stop destination for all your travel needs. We are a passionate
+            team of travel enthusiasts who have come together to make your travel
+            dreams a reality. Our mission is to provide you with an unforgettable travel
+            experience that takes you beyond the ordinary and into the extraordinary.
+            We believe that travel is more than just visiting a new place, it’s about creating memories and connecting with the world.</p>
+          <a href="#" class="travel-button">Read More</a>
+        </div>
+        <div class="image-container">
+          <img src="./images/dream destination.png" id="travel-image">
+        </div>
+      </section>
+
+      <section class="country-section">
+        <div class="country-card">
+            <img src="./images/france.jpeg" alt="Image 1">
+            <div class="country-card-content">
+                <h3>France</h3>
+                <span><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i></span>
+                  &nbsp;&nbsp; $3,000
+                <p>Paris, Monaco, Lyon &nbsp;&nbsp;&nbsp;
+                   <i class="fa-solid fa-circle" id="circle"></i>13 days</p>
             </div>
-            <div class="homepageabout-text">
-            <p>ABOUT TB HOMES PROPERTY CONSULTING
-                TB Homes Property Consulting is the pioneer company which set the pace for
-                 TB Group in 2006 when it was established. TB Homes core activities are asset
-                  valuations (including landed property), asset management,
-                   property brokerage (sales, leasing and acquisition) and general property advisory
-                    work to include property market research, property due diligence and documentation.
-                     TB Homes is currently the leading property services firm in Ghana with regard to
-                      its market share in the asset and mortgage valuation segment and general
-                       property advisory services.</p>
+        </div>
+        <div class="country-card">
+            <img src="./images/spain.jpeg" alt="Image 2">
+            <div class="country-card-content">
+              <h3>Spain</h3>
+              <span><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i></span>
+                &nbsp;&nbsp; $3,000
+              <p>Madrid, Ibiza, Barcelona &nbsp;&nbsp;&nbsp;
+                 <i class="fa-solid fa-circle" id="circle"></i>9 days</p>
             </div>
         </div>
-        <div class="mission"> 
-            <div class="topic"><p>OUR MISSION</p></div> 
-            <p>TB Homes is the ultimate destination for anything property.
-                 We pride ourselves with modern thinking in the field of property, 
-                 which is investment based and results oriented.</p>  
-                 <div class="values"><p>OUR VISION</p></div>
-                 <div class="vision"><p>OUR CORE VALUES</p></div>
-        </div>
-        </div>
-    </div>
-
-    <section class="property">
-      <h2>OUR PROPERTY LIST</h2>
-      <hr class="hr">
-    </section>
-
-      <section>
-        <div class="property-container">
-            <div class="property-card">
-              <img src="./images/house3.jpeg" alt="Image 1">
-              <h3>Four Storey Building For Sale</h3>
-              <p style="color: #FC5214;"><i class="fa-solid fa-star"></i>
+        <div class="country-card">
+            <img src="./images/USA.jpeg" alt="Image 3">
+            <div class="country-card-content">
+              <h3>United States</h3>
+              <span><i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i></p>
-              <p>4 Bedroom / 4 Bathroom / Wifi / Kitchen</p>
-              <p>Price : $700,000</p>
-              <p><i class="fa-solid fa-location-dot"></i>Cantoments, Accra</p>
-            </div>
-            <div class="property-card">
-              <img src="./images/house4.jpeg" alt="Image 2">
-              <h3>Two Bedroom Apartment For Rent</h3>
-              <p style="color: #FC5214;"><i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i></p>
-              <p>2 Bedroom / 2 Bathroom / Wifi / Kitchen</p>
-              <p>Price : $400 Month</p>
-              <p><i class="fa-solid fa-location-dot"></i>Lakeside Estate, Accra</p>
-            </div>
-            <div class="property-card">
-              <img src="./images/house5.jpeg" alt="Image 3">
-              <h3>Two Bedroom House For Rent</h3>
-              <p style="color: #FC5214;"><i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i></p>
-              <p>2 Bedroom / 2 Bathroom / Wifi / Kitchen</p>
-              <p>Price: $250 Month</p>
-              <p><i class="fa-solid fa-location-dot"></i>East Legon Hills, Accra</p>
+                <i class="fa-solid fa-star"></i></span>
+                &nbsp;&nbsp; $5,200
+              <p>Florida, Texas, California &nbsp;&nbsp;&nbsp;
+                 <i class="fa-solid fa-circle" id="circle"></i>9 days</p>
             </div>
         </div>
     </section>
 
-    <section>
-      <div class="property-container">
-          <div class="property-card">
-            <img src="./images/house6.jpeg" alt="Image 1">
-        <h3>Three Bedroom For Sale</h3>
-        <p style="color: #FC5214;"><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i></p>
-        <p>3 Bedroom / 3 Bathroom / Wifi / Kitchen</p>
-        <p>Price : $500,000</p>
-        <p><i class="fa-solid fa-location-dot"></i>Ashaley Botwe, Accra</p>
+    <section class="country-section">
+      <div class="country-card">
+          <img src="./images/qatar.jpeg" alt="Image 1">
+          <div class="country-card-content">
+              <h3>Qatar</h3>
+              <span><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i></span>
+                &nbsp;&nbsp; $6,400
+              <p>Doha, Al-Rayyan, Al-Wakkrah &nbsp;&nbsp;&nbsp;
+                 <i class="fa-solid fa-circle" id="circle"></i>13 days</p>
           </div>
-          <div class="property-card">
-            <img src="./images/house7.jpg" alt="Image 2">
-        <h3>Two Bedroom Apartment For Rent</h3>
-        <p style="color: #FC5214;"><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          </p>
-        <p>2 Bedroom / 2 Bathroom / Wifi / Kitchen</p>
-        <p>Price : $400 Month</p>
-        <p><i class="fa-solid fa-location-dot"></i>RingRoad Ave. Accra</p>
+      </div>
+      <div class="country-card">
+          <img src="./images/United Kingdom.jpeg" alt="Image 2">
+          <div class="country-card-content">
+            <h3>United Kingdom</h3>
+            <span><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i></span>
+              &nbsp;&nbsp; $5,000
+            <p>England, Scotland, Wales &nbsp;&nbsp;&nbsp;
+               <i class="fa-solid fa-circle" id="circle"></i>13 days</p>
           </div>
-          <div class="property-card">
-            <img src="./images/house8.jpeg" alt="Image 3">
-        <h3>Two Bedroom House For Rent</h3>
-        <p style="color: #FC5214;"><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i></p>
-        <p>2 Bedroom / 2 Bathroom / Wifi / Kitchen</p>
-        <p>Price: $250 Month</p>
-        <p><i class="fa-solid fa-location-dot"></i>Spintex Rd. Accra</p>
+      </div>
+      <div class="country-card">
+          <img src="./images/italy.jpeg" alt="Image 3">
+          <div class="country-card-content">
+            <h3>Italy</h3>
+            <span><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i></span>
+              &nbsp;&nbsp; $1,500
+            <p>Rome, Milan, Venice &nbsp;&nbsp;&nbsp;
+               <i class="fa-solid fa-circle" id="circle"></i>9 days</p>
           </div>
       </div>
   </section>
 
-  <section class="land-sale">
-    <h2>Sell Your Land!</h2>
-   <p> If you are looking for an experienced company to sell your LAND in Ghana, you
-     have come to the right place. We have a big customer base to market your land to the
-      right buyers. Get in touch and let us help you sell your land.</p>
-    <button class="sale-btn">Get In Touch<i class="fa-solid fa-arrow-right"></i></button>
-</section>
+      
 
-   
-<section class="agents">
-  <h2>OUR AGENTS</h2>
-  <hr class="hr">
-</section> 
+      <section class="mission-section">
+        <div class="text-left">
+          <h2>Mission</h2>
+          <p>TTo provide personalized travel experiences that cater to the unique
+            needs and interests of each individual traveler.</p>
+        </div>
+    
+        <div class="text-right">
+          <h2>Vission</h2>
+          <p>To become the leader in personalized travel, offering customized tours and trips that
+            allow travelers to truly immerse themselves in the destinations they visit.</p>
+        </div>
+      </section>
 
-<section class="agent-container">
-  <div class="agent-card">
-      <img src="./images/Citizen.jpg" alt="Agent 1">
-      <div class="agent-info">
-          <h3>Hon. Kofi Citizen</h3>
-          <p>Specialization: Luxury Homes</p>
-          <p>Contact: honkoficitizen@agentyard.com</p>
-      </div>
-      <div class="testimonial">
-          <p>"I had a great experience working with this real estate company. They were very professional and helped
-              me find the perfect home!"</p>
-      </div>
-  </div>
-  <div class="agent-card">
-      <img src="./images/OJ.jpg" alt="Agent 2">
-      <div class="agent-info">
-          <h3>Owusu Desmond Jnr</h3>
-          <p>Specialization:Rental Properties</p>
-          <p>Contact: owusudesmondjnr@agentyard.com</p>
-      </div>
-      <div class="testimonial">
-          <p>"The team at this real estate company is knowledgeable and dedicated. They made the buying process
-              smooth and stress-free."</p>
-      </div>
-  </div>
-  <div class="agent-card">
-      <img src="./images/Shasta.jpg" alt="Agent 3">
-      <div class="agent-info">
-          <h3>Abdul Bazaar</h3>
-          <p>Specialization:Rental Buying and Selling</p>
-          <p>Contact: Bazaar@agentyard.com</p>
-      </div>
-      <div class="testimonial">
-          <p>"I highly recommend this real estate company. They listened to my needs and found the perfect property
-              for me in no time!"</p>
-      </div>
-  </div>
-</section>
+      <section class="summer-section">
+        <div class="summer-text">
+          <h2>Packages<i class="fa-sharp fa-solid fa-seedling" id="packages"></i></h2>
+        <h1>Summer 2023 Packages</h1>
+        <p>Join peoples from across the world and experience the rich cultures<br>in other countries.
+          Our Featured packages allow you to get away from<br>routine, spend time with family and friends.
+        </p>
+        </div>
+      </section>
 
-<section class="home" id="home">
-  <form action="''">
-      <h3>Find Your Perfect Home</h3>
+      <section class="packages-container">
+        <div class="packages-card">
+          <div class="slideshow-container">
+            <div class="slideshow-images">
+              <img src="./images/beach1.jpeg" alt="Image 1">
+              <img src="./images/beach2.jpeg" alt="Image 2">
+              <img src="./images/beach3.jpeg" alt="Image 3">
+              <img src="./images/beach4.jpg" alt="Image 4">
+            </div>
+          </div>
+          <div class="packages-text">
+            <h2>Exotic Beach Retreat</h2>
+            <p>Destination: Tropical paradise like Bali, Maldives or Seychelles
 
-      <div class="buttons-container">
-          <a href="#" class="btn">For Rent</a>
-          <a href="#" class="btn">For Sale</a>
-      </div>
+              Duration: 7 days and 6 nights
+              
+              Highlights: Scenic beachfront accommodation, water sports activities, island hopping, spa treatments and local cultural experience.
+              
+              Price: $ 9,210 - 10,000</p>
+          </div>
+        </div>
+    
+        <div class="packages-card">
+          <div class="slideshow-container">
+            <div class="slideshow-images">
+              <img src="./images/historical1.jpeg" alt="Image 4">
+              <img src="./images/historical 2.jpeg" alt="Image 5">
+              <img src="./images/historical 3.jpeg" alt="Image 6">
+              <img src="./images/historical4.jpeg" alt="Image 7">
+            </div>
+          </div>
+          <div class="packages-text">
+            <h2>Historical City Exploration</h2>
+            <p>Destination; Historic cities like Rome, Instabul or Kyoto
 
-      <div class="inputBox">
-          <input type="search" name="" placeholder="neighbourhood" id="">
-          <input type="search" name="" placeholder="city" id="">
-          <select name="" id="">
-              <option value="" disabled hidden selected>minimum prices</option>
-              <option value="Ghc1500">Ghc1500</option>
-              <option value="Ghc1350">Ghc1350</option>
-              <option value="Ghc7000">Ghc7000</option>
-              <option value="Ghc5000">Ghc5000</option>
-              <option value="Ghc6000">Ghc6000</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>maximum prices</option>
-              <option value="Ghc30000">Ghc30000</option>
-              <option value="Ghc50000">Ghc12000</option>
-              <option value="Ghc70000">Ghc70000</option>
-              <option value="Ghc50000">Ghc500000</option>
-              <option value="Ghc85000">Ghc85000</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>property status</option>
-              <option value="Ready To Move">Ready To Move</option>
-              <option value="under construction">under construction</option>
-              <option value="furnished">furnished</option>
-              <option value="semi-furnished">semi-furnished</option>
-              <option value="unfurnished">unfurnished</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>property type</option>
-              <option value="flat">flat</option>
-              <option value="house">house</option>
-              <option value="shop">shop</option>
-              <option value="warehouse">warehouse</option>
-              <option value="land">land</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>BHK</option>
-              <option value="1 BHK">1 BHK</option>
-              <option value="2 BHK">2 BHK</option>
-              <option value="3 BHK">3 BHK</option>
-              <option value="4 BHK">4 BHK</option>
-              <option value="5 BHK">5 BHK</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>aminities</option>
-              <option value="parking space">parking space</option>
-              <option value="swimming pool"> swimming pool</option>
-              <option value="playground">playground</option>
-              <option value="security">security</option>
-              <option value="all">all</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>bedrooms</option>
-              <option value="1 bedroom">1 bedroom</option>
-              <option value="2 bedroom">2 bedroom</option>
-              <option value="3 bedroom">3 bedroom</option>
-              <option value="4 bedroom">4 bedroom</option>
-              <option value="5 bedroom">5 bedroom</option>
-          </select>
-          <select name="" id="">
-              <option value="" disabled hidden selected>bathrooms</option>
-              <option value="1 bathroom">1 bathroom</option>
-              <option value="2 bathroom">2 bathroom</option>
-              <option value="3 bathroom">3 bathroom</option>
-              <option value="4 bathroom">4 bathroom</option>
-              <option value="5 bathroom">5 bathroom</option>
-          </select>
+              Duration: 10 days and 10 nights
+              
+              Price: $ 6,012 - 8,000</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="packages-carrier">
+        <div class="packages-card">
+          <div class="slideshow-container">
+            <div class="slideshow-images">
+              <img src="./images/luxury1.jpeg" alt="Image 1">
+              <img src="./images/luxury2.jpeg" alt="Image 1">
+              <img src="./images/luxury3.jpeg" alt="Image 1">
+              <img src="./images/luxury4.jpeg" alt="Image 1">
+            </div>
+          </div>
+          <div class="packages-text">
+            <h2>Luxury Getaway</h2>
+            <p>Destination: Destinations like Dubai, Monaco, Paris
+
+              Duration: 5 days and 4 nights
+              
+              Highlights: Scenic beachfront accommodation, water sports activities, island hopping, spa treatments and local cultural experience.
+              
+              Price: $ 11,210 - 15,000</p>
+          </div>
+        </div>
+    
+        <div class="packages-card">
+          <div class="slideshow-container">
+            <div class="slideshow-images">
+              <img src="./images/family1.jpeg" alt="Image 4">
+              <img src="./images/family2.jpeg" alt="Image 5">
+              <img src="./images/family3.jpg" alt="Image 6">
+              <img src="./images/family4.jpg" alt="Image 7">
+            </div>
+          </div>
+          <div class="packages-text">
+            <h2>Family Fun Adventure</h2>
+            <p>Destination: Orlando, Singapore, Sydney etc..
+
+              Duration: 10 days and 9 nights
+              
+              Highlights: Our featured packages allow you tonget away from routines, spend time with family and friends.
+              
+              Price: $ 9,210 - 10,000</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="youtube">
+        <div class="youtube-text">
+          <h2>We Provide High-Quality<br>Travel & Tours Services & Solutions</h2>
+          <p> <button id="youtube"><a href="https://www.youtube.com/watch?v=cu5BZNymMzs&t=37s">
+            <i class="fa-sharp fa-solid fa-circle-play"></i>Watch Video</a></button></p>
+        </div>
+      </section>
+
+      <div class="testimonial-topic">
+        <h2>Testimonials</h2>
+        <p>What Clients Say</p>
       </div>
 
-      <button class="search-property">search property</button>
-  </form>
-  <div class="overlay"></div>
-</section>
+      <section class="testimonial-section">
+        <div class="testimonial-card">
+          <p>"We had an amazing experience with the travel agency. The tour guides were knowledgeable and friendly, and the destinations were breathtaking. Highly recommended!"</p>
+          <div class="testimonial-name">John Doe</div>
+          <div class="testimonial-designation">Adventurer</div>
+        </div>
+    
+        <div class="testimonial-card">
+          <p>"Our family vacation organized by the travel agency was exceptional. From start to finish, everything was well-planned and seamless. Thanks for creating wonderful memories!"</p>
+          <div class="testimonial-name">Jane Smith</div>
+          <div class="testimonial-designation">Family Traveler</div>
+        </div>
+    
+        <div class="testimonial-card">
+          <p>"The tour exceeded my expectations. The accommodations were comfortable, and the activities were thrilling. I will definitely book another tour with this agency in the future."</p>
+          <div class="testimonial-name">Robert Johnson</div>
+          <div class="testimonial-designation">Adventure Enthusiast</div>
+        </div>
+      </section>
 
+      <div class="testimonial-topic">
+        <h2>We're Situated in Different Countries</h2>
+      </div>
+      <div class="globe">
+        <img src="/images/world map.jpg" class="world-map">
+      </div>
 
-<section class="newsletter">
-  <div class="newsletter-text">
-      <p>Newsletter Sign Up</p>
-  </div>
-  <div class="input-container">
-  <input type="text" class="input-field" placeholder="Input your email"><button class="news-signup" >SIGN UP</button>
-  </div>
-</section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Contact Us</h3>
+              <p>
+                <strong>Pathfinder Travel and Tour</strong><br>
+                1234 Spintex Road.<br>
+                Accra - Tema<br>
+                Ghana
+              </p>
+              <p>
+                <strong>Email:</strong> info@pathfinderstravelandtours.com<br>
+                <strong>Phone:</strong> +233 20 742 2456<br>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>Follow Us</h3>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Newsletter</h3>
+              <p>Subscribe to our newsletter to receive the latest travel deals and updates.</p>
+              <form class="newsletter-form">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  &copy; 2023 Pathfinder Travel and Tour. All rights reserved.
+                  | <a href="#">Privacy Policy</a>
+                  | <a href="#">Terms of Service</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-
-<footer class="footer">
-  <p>Contact Us: contact@example.com | Phone: 123-456-7890</p>
-  <div class="footer-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Properties</a>
-      <a href="#">Agents</a>
-      <a href="#">Contact</a>
-  </div>
-  <div class="social-icons">
-      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="copyright">
-      <p>&copy; 2023 Your Real Estate Company. All rights reserved.</p>
-  </div>
-</footer>
-
-
-
-
-
-    <script>
-        var navLinks = document.getElementById("navLinks");
-  
-        function showMenu() {
-          navLinks.style.right = "0";
-        }
-  
-        function hideMenu() {
-          navLinks.style.right = "-200px";
+      <script>
+        function toggleNavbar() {
+          var navbar = document.getElementById("myNavbar");
+          if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+          } else {
+            navbar.className = "navbar";
+          }
         }
       </script>
-    
-</body>
-</html>
+      </head>
+      </html>
+      
